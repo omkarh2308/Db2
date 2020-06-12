@@ -4,6 +4,6 @@
 	<classpathentry kind="src" path="challenge/src/main/java"/>
 	<classpathentry kind="src" path="challenge/src/test/java"/>
 	<classpathentry kind="src" path="/corse-api"/>
-	<classpathentry kind="lib" path="G:/DB/jar_files/lombok-1.16.10.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/lombok-1.16.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
