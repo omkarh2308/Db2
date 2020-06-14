@@ -5,5 +5,42 @@
 	<classpathentry kind="src" path="challenge/src/test/java"/>
 	<classpathentry kind="src" path="/corse-api"/>
 	<classpathentry kind="lib" path="G:/DB/jar_files/lombok-1.16.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/groovy-2.4.9.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/groovy-json-2.4.9.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/groovy-xml-2.4.9.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/httpmime-4.5.1.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/json-path-3.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/rest-assured-3.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/rest-assured-common-3.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-aop-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-beans-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-context-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-core-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-expression-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-mock-mvc-3.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-test-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-web-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/spring-webmvc-4.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/xml-path-3.0.5.jar"/>
+	<classpathentry kind="lib" path="G:/DB/jar_files/org.springframework.web-3.0.6.release.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/commons-logging-tests.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/jars/springjars/spcorejars all/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

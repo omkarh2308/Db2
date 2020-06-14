@@ -13,7 +13,7 @@ public class AccountsTransferService {
 
 	
 	@Getter
-	private final AccountsRepository accountsRepository;
+	private  AccountsRepository accountsRepository;
 	
 	public void transferAmount(String accountFrom, String accountTo, BigDecimal amount) {
 		this.accountsRepository.transferAmount(accountFrom, accountTo, amount);

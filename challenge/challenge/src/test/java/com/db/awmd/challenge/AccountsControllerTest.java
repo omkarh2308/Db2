@@ -1,6 +1,7 @@
 package com.db.awmd.challenge;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -16,7 +17,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
+
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
@@ -101,4 +102,36 @@ public class AccountsControllerTest {
       .andExpect(
         content().string("{\"accountId\":\"" + uniqueAccountId + "\",\"balance\":123.45}"));
   }
+  @Test
+	public void transferAmount() throws Exception {
+		Account account = new Account("acc_Id-1111", new BigDecimal("20000"));
+		this.accountsService.createAccount(account);
+
+		Account account1 = new Account("acc_Id-3333", new BigDecimal("1000"));
+		this.accountsService.createAccount(account1);
+
+		String accountFrom = "acc_Id-1111";
+		String accountTo = "acc_Id-3333";
+		BigDecimal amount = new BigDecimal("5000");
+		this.mockMvc.perform(post("/v1/accounts/transferAmt").contentType(MediaType.APPLICATION_JSON)
+				.param("accountFrom", accountFrom).param("accountTo", accountTo).param("amount", amount.toString()))
+				.andExpect(status().isOk());
+
+	}
+
+	@Test
+	public void transferAmountInsufficientBalance() throws Exception {
+		Account account = new Account("acc_Id-1111", new BigDecimal("20000"));
+		this.accountsService.createAccount(account);
+
+		Account account1 = new Account("acc_Id-3333", new BigDecimal("1000"));
+		this.accountsService.createAccount(account1);
+
+		String accountFrom = "acc_Id-1111";
+		String accountTo = "acc_Id-3333";
+		BigDecimal amount = new BigDecimal("50000");
+		this.mockMvc.perform(post("/v1/accounts/transferAmt").contentType(MediaType.APPLICATION_JSON)
+				.param("accountFrom", accountFrom).param("accountTo", accountTo).param("amount", amount.toString()))
+				.andExpect(status().isBadRequest());
+	}
 }

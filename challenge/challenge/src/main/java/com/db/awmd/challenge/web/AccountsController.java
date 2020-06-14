@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class AccountsController {
 
+	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(AccountsController.class);
+
   private final AccountsService accountsService;
 
   @Autowired
@@ -29,8 +31,8 @@ public class AccountsController {
   }
 
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<Object> createAccount(@RequestBody @Valid Account account) {
-    log.info("Creating account {}", account);
+	public ResponseEntity<Object> createAccount(@RequestBody @Valid Account account) {
+		log.info("Creating account {}", account);
 
     try {
     this.accountsService.createAccount(account);

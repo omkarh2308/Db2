@@ -9,7 +9,7 @@ public interface AccountsRepository {
 
   void createAccount(Account account) throws DuplicateAccountIdException;
 
-  Account getAccount(String accountId);
+  Account getAccount(String accountId); 
 
   void clearAccounts(); 
   
